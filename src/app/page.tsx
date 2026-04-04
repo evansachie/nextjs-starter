@@ -1,4 +1,13 @@
 import Image from "next/image";
+import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/seo";
+
+export const metadata: Metadata = createPageMetadata({
+  title: "Landing Template",
+  description:
+    "Reusable landing page starting point with robust defaults for theme and SEO.",
+  path: "/",
+});
 
 export default function Home() {
   return (
